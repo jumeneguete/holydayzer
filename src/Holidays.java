@@ -5,7 +5,7 @@ class Holidays {
 
     public void findByDate( String date ) {
         if (!date.matches("((0[1-9])?([1-2][0-9])?(3[0-1])?){1}/((0[1-9])?(1[0-2])?){1}/(2023)")) {
-            System.out.println("Formato inválido de data! Use data válida no formato dd/mm/aaaa ");
+            System.out.println("Formato inválido de data! Use data válida no formato dd/mm/2023 ");
         } else {
             switch (date) {
                 case "01/01/2023":
@@ -64,6 +64,7 @@ class Holidays {
         holidays.add("Proclamação da República");
         holidays.add("Natal");
 
+        System.out.println("Feriados 2023");
         System.out.println(holidays);
 
         return holidays;
